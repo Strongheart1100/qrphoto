@@ -1,0 +1,16 @@
+{
+  "name": "qr-photo-upload",
+  "version": "1.0.0",
+  "description": "QR based phone-to-PC photo upload system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "localtunnel": "^2.0.2",
+    "multer": "^2.0.2",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.1"
+  }
+}

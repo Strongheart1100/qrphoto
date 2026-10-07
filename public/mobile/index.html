@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Photo Upload</title>
+  <link rel="stylesheet" href="/mobile/style.css">
+</head>
+<body>
+  <main class="card">
+    <div class="icon">📷</div>
+    <h1>Send Photo to PC</h1>
+    <p class="muted">Select a photo from your phone and upload it.</p>
+
+    <label for="photo" class="primary">Select Photo</label>
+    <input id="photo" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+
+    <img id="preview" class="preview hidden" alt="Selected photo">
+    <p id="fileInfo"></p>
+    <button id="uploadBtn" class="primary hidden">Upload Photo</button>
+    <p id="message" class="message"></p>
+  </main>
+  <script src="/mobile/app.js"></script>
+</body>
+</html>

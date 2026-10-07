@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Photo Upload - PC</title>
+  <link rel="stylesheet" href="/pc/style.css">
+</head>
+<body>
+  <main class="card">
+    <div class="icon">📱</div>
+    <h1>Upload Photo from Phone</h1>
+    <p class="muted">Click the button and scan the QR code with your phone.</p>
+
+    <button id="chooseBtn" class="primary">Choose Photo</button>
+
+    <section id="qrPanel" class="qr-panel hidden">
+      <h2>Scan this QR code</h2>
+      <img id="qrImage" alt="QR code">
+      <p id="status" class="status">Waiting for your phone...</p>
+      <button id="cancelBtn" class="secondary">Cancel</button>
+    </section>
+
+    <section id="previewPanel" class="preview hidden">
+      <h2>Photo received</h2>
+      <img id="preview" alt="Uploaded photo">
+      <p id="photoName"></p>
+      <button id="newBtn" class="primary">Upload Another Photo</button>
+    </section>
+
+    <p class="small">Maximum 5 MB • JPG, JPEG, PNG, WEBP</p>
+    <p class="small warning">Run with <b>npm start</b>. Do not open this page with VS Code Live Server.</p>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/pc/app.js"></script>
+</body>
+</html>
